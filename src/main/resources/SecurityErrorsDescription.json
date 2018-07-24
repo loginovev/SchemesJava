@@ -1,0 +1,11 @@
+[
+  {"description":"ACCESS-DENIED","status":403,"message":"Access denied"},
+  {"description":"USER-NOT-FOUND","status":403,"message":"User not found"},
+  {"description":"DELETE-YOUR-OWN-SESSION","status":403,"message":"Deleting your own session not allowed"},
+  {"description":"SECRET-HEADER-NOT-FOUND","status":403,"message":"Secret header not found"},
+  {"description":"USER-NOT-AUTHENTICATED","status":403,"message":"User not authenticated"},
+  {"description":"WRONG-SECRET-TOKEN","status":403,"message":"Secret token is wrong"},
+  {"description":"USER-HAS-ALREADY-REGISTERED","status":400,"message":"The user has already registered"},
+  {"description":"USER-IS-BANNED","status":403,"message":"The user is banned"},
+  {"description":"WRONG-FILTER-FIELD","status":500,"message":"Wrong filter of field"}
+]

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="error" name="XMLConfig" packages="ru.loginov">
+    <Properties>
+        <Property name="filename">./test.log</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="STDOUT">
+            <PatternLayout pattern="%d;%p;%C{1.};[%t];%X{username};%X{event};%X{structure};%X{data};%m%n"/>
+        </Console>
+        <File name="File" fileName="${filename}">
+            <PatternLayout pattern="%d;%p;%C{1.};[%t];%X{username};%X{event};%X{structure};%X{data};%m%n"/>
+        </File>
+    </Appenders>
+
+    <Loggers>
+
+        <Logger name="ru.loginov" level="info">
+            <AppenderRef ref="File"/>
+        </Logger>
+
+        <Root level="info">
+            <AppenderRef ref="STDOUT"/>
+        </Root>
+    </Loggers>
+
+</Configuration>
